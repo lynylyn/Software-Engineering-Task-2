@@ -23,3 +23,41 @@ The aim of this project is to create a 'Top Trumps' card game, using vehicles as
     - The safety rating, while being a crucial factor when purchasing a car, is not necessarily an impactful attribute to the game as it doesn't induce the same enthusiasm as speed or brand may.
 6. Sustainability (petrol-hybrid-electric / 123)
     - Sustainability has beeen placed last in power for a few reasons. Its reason for inclusion is the importance of sustainability in our current society; however, in the game's dynamics, there are limited options for how sustainable a car can be (only three) and thus it would be difficult to compare exact numbers.
+
+Fairness within a board game is generally described to mean that all players have equal opportunities and chances to win the game. This edition of 'Top Trumps' ensures that fairness through random draws of a card, the same amount of turns for each player, and ease of understanding regardless of experience. Fairness in a project like this is important as it fosters positive experiences for the players, encourages healthy competition, and maintains the game's integrity.
+
+## Part B: Class Design
+| Car |
+| - |
+| Horsepower and Max Speed: integer |
+| Price: float |
+| Distance Travelled: float |
+| Age: float |
+| Safety Rating: integer |
+| Sustainability: string |
+| ---------------------------------------- |
+| compare()
+
+| Card |
+| - |
+| Colour: string |
+| ---------------|
+| draw()|
+
+| Deck |
+| - |
+| No. of cards left: integer |
+| --------------------------
+| shuffle() |
+
+| Player |
+| - |
+| No. of turns left: integer |
+| Wins: integer |
+| --------------------------- |
+| play() |
+| forfeit() |
+
+| Game |
+| - |
+|
