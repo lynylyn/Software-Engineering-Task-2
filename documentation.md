@@ -5,10 +5,6 @@ note to self: page 364 of textbook
 
 The aim of this project is to create a 'Top Trumps' card game, using vehicles as the drawable cards. The focus is to provide entertainment, and in order to do this, ensuring the game is fair, logical, and simple. The documentation for this task will be centred around the game's relation to object-oriented programming.
 
-| STEP | WHY | EXPECTED | RESULT | TIME
-| - | - | - | - | - |
-| Requirements Outline | Clear view for future steps in the project | ? | ? | 20-30 minutes
-
 ## Part A: Data Selection and Game Attributes
 ### 6 attributes
 1. Horsepower & Max speed
@@ -36,7 +32,9 @@ Fairness within a board game is generally described to mean that all players hav
 | Safety Rating: integer |
 | Sustainability: string |
 | ---------------------------------------- |
-| compare()
+| compare() |
+
+The car class is the most important of the system. It is on the card, and holds each attribute that makes a card more or less powerful.
 
 | Card |
 | - |
@@ -44,11 +42,15 @@ Fairness within a board game is generally described to mean that all players hav
 | ---------------|
 | draw()|
 
+The card class is mostly used to hold the car, with its only attribute being its colour.
+
 | Deck |
 | - |
 | No. of cards left: integer |
 | --------------------------
 | shuffle() |
+
+The deck holds every card which isn't held by a player. Its ability to be shuffled is its most important feature.
 
 | Player |
 | - |
@@ -58,6 +60,29 @@ Fairness within a board game is generally described to mean that all players hav
 | play() |
 | forfeit() |
 
+The player possesses the cards and is able to interact with the entire game/system.
+
 | Game |
 | - |
-|
+| Cards available: integer |
+| Number of players: integer |
+| --------------------------- |
+| display_rules() |
+| deal() |
+
+The game is the superclass. All classes other than the player are included.
+
+## Part C: Class Diagram
+
+![Class Diagram](<Class Diagram.jpg>)
+
+Note that the number of players attribute for the game class was not included. The player should also have zero to many (0..*) cards, according to the game mechanics below.
+
+## Part D: Game Mechanics Design
+- At the beginning of the game, the deck is shuffled and divided up evenly among the players. The player to the dealer's left goes first, and selects a category from their card. The other players reveal what number they had for that category. The player with the highest number keeps all other cards from that round. The game continues until one player has all cards or all other players have forfeited.
+
+- In the case of a draw, the players must compare the next category on the card.
+
+- One possible way the game could be unfair or not function as intended is through the 'sustainability' category which only has three options. This issue is rectified through the ability to move on to the next category if there's a draw (e.g., if three players have electric cars, they could compare horsepower and max speed instead).
+
+![Structure Chart](<Structure Chart.jpg>)
