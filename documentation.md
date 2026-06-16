@@ -10,11 +10,11 @@ The aim of this project is to create a 'Top Trumps' card game, using vehicles as
 1. Horsepower & Max speed
     - This attribute was chosen mainly for its iconic ties to cars, especially in car racing. This attribute being first place increases user entertainment as the speed of a car is simple, numerical, and with a clear 'better' option.
 2. Price ($aud)
-    - Not dissimilar from the horsepower attribute, the price is another which is easy to rank, and excellently compliments the other attributes as, for example, a car with a low price and a high horsepower is much better than one a car with a high price and low horsepower.
+    - Not dissimilar from the horsepower attribute, the price is another which is easy to rank, and makes it easy to tell when a car is extremely prestigious and high-quality.
 3. Distance travelled (km)
     - Both the distance a car has travelled and the age of the car tend to reflect to its overall condition in a numerical way. This attribute was placed third as, although the condition of the car is crucial to its power in the game, the distance travelled will not always necessarily perfectly reflect the condition.
 4. Age
-    - Almost exactly the same as the attribute listed above, the age of a car often hints towards its condition, whilst also raising other concerns (safety of older models, wear-and-tear with time, etc.). This attribute was placed below distance travelled as it is possible to keep a car in good condition over a long period of time with low use.
+    - Almost exactly the same as the attribute listed above, the age of a car often hints towards its condition, whilst also raising other concerns (safety of older models, wear-and-tear with time, etc.). The game dynamics with age are unique, to preserve the importance of vintage cars, a cars ability to 'trump' decreases as it ages until it hits 30 years, then it goes back up again. For example, a car from 1994 would have a rating of 2, and a 1970 car would have a rating of 26. The rating caps at 30 (a 1960 and a 1920 car would both be a '30' for age)
 5. Safety rating
     - The safety rating, while being a crucial factor when purchasing a car, is not necessarily an impactful attribute to the game as it doesn't induce the same enthusiasm as speed or brand may.
 6. Sustainability (petrol-hybrid-electric / 123)
@@ -86,3 +86,15 @@ Note that the number of players attribute for the game class was not included. T
 - One possible way the game could be unfair or not function as intended is through the 'sustainability' category which only has three options. This issue is rectified through the ability to move on to the next category if there's a draw (e.g., if three players have electric cars, they could compare horsepower and max speed instead).
 
 ![Structure Chart](<Structure Chart.jpg>)
+
+## Part E: Interface and Card Design
+
+## Part F: Social, Ethical and Legal Implications
+1. **Individual Impact**
+    - The game has the ability to influence a player's decision in purchasing a car. It may lead them to believe that a car having high horsepower is the most significant in cars meant for day-to-day driving, which is untrue. Biases towards sports cars, or other high-performing vehicles, may be apparent. The responsibility as a designer to present fair information is important as purchasing cars affects both money and safety of consumers.
+2. **Social Impact**
+    - The game may appear to discriminate against those with less money as more expensive cars are 'better' in the game dynamics. It also tends to favour sports cars or high-performance cars. The game can be made fairer through the existence of other characteristics which don't necessarily rely on money, such as age, safety, and sustainability.
+3. **Environmental Impact**
+    - The game has a positive enviornmental impact as it favours cars which are more environmentally friendly (electric cars). It pushes the idea that petrol-fuelled cars are worse than electric cars.
+4. **Legal Considerations**
+    - Some legal considerations include the use of brand names, logos, and car models for commercial reasons. The use of specific brands could be specifically problematic if advertising includes their trademarked property. When taking data from sites such as carsales.com.au, issues such as reliability should be considered; the cars are user submitted, and listed for the purpose of advertising for profit. This could lead to false information which make the car seem better than it actually is. A warning to users to not use the game as a direction as to what car to buy could ensure users are not mislead.
