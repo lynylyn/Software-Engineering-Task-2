@@ -1,8 +1,6 @@
 # Car Comparison Game
 
 ## Project Planning
-note to self: page 364 of textbook
-
 The aim of this project is to create a 'Top Trumps' card game, using vehicles as the drawable cards. The focus is to provide entertainment, and in order to do this, ensuring the game is fair, logical, and simple. The documentation for this task will be centred around the game's relation to object-oriented programming.
 
 ## Part A: Data Selection and Game Attributes
@@ -79,7 +77,7 @@ The game is the superclass. All classes other than the player are included.
 Note that the number of players attribute for the game class was not included. The player should also have zero to many (0..*) cards, according to the game mechanics below.
 
 ## Part D: Game Mechanics Design
-- At the beginning of the game, the deck is shuffled and divided up evenly among the players. The player to the dealer's left goes first, and selects a category from their card. The other players reveal what number they had for that category. The player with the highest number keeps all other cards from that round. The game continues until one player has all cards or all other players have forfeited.
+- At the beginning of the game, the deck is shuffled and divided up evenly among the players. An attribute is chosen randomly by the system, and every player reveals what number they had for that category. The player with the highest number keeps all other cards from that round. The game continues until one player has all cards or all other players have forfeited.
 
 - In the case of a draw, the players must compare the next category on the card.
 
@@ -88,6 +86,14 @@ Note that the number of players attribute for the game class was not included. T
 ![Structure Chart](<Structure Chart.jpg>)
 
 ## Part E: Interface and Card Design
+![Card Design](<Card Design.jpg>)
+2 card design options
+
+![Game Interface](<Game Interface Sketch.jpg>)
+The game interface
+
+![Storyboard](Storyboard.jpg)
+Storyboard
 
 ## Part F: Social, Ethical and Legal Implications
 1. **Individual Impact**
